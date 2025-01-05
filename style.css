@@ -1,0 +1,71 @@
+
+body {
+    background-color: #6b03c7;
+    font-family: Arial, sans-serif;
+    margin: 9px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #6b03c7;
+    font-size: 1.6rem;
+    margin-top: 7px;
+}
+
+.topico {
+    background-color: yellow;
+    width: 50%;
+    border-radius: 50px;
+    margin-left: 25%;
+    top: 22px;
+    position: relative;
+    padding: 1px 0;
+    height: 36px;
+}
+.tabela-precos {
+    border-radius: 42px;
+    padding: 3px;
+    border: yellow solid 4px;
+    width: 97%;
+}
+table.tabela {
+    margin-top: 23px;
+}
+.tabela-precos th,
+.tabela-precos td {
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela-precos th {
+    color: white;
+}
+
+.descricao {
+    font-style: italic;
+}
+
+.produto {
+    margin-bottom: 11px;
+    border: none !important;
+}
+
+.produto h2 {
+    margin: 0;
+    font-size: 19px;
+    color: white;
+}
+
+.produto p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.preco {
+    font-weight: bold;
+}
+
+.tamanho {
+    margin-bottom: 10px;
+}
