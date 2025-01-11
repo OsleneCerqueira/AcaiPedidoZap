@@ -15,9 +15,9 @@ h1 {
 
 .topico {
     background-color: yellow;
-    width: 50%;
+    width: 70%;
     border-radius: 50px;
-    margin-left: 25%;
+    margin-left: 16%;
     top: 22px;
     position: relative;
     padding: 1px 0;
@@ -31,11 +31,12 @@ h1 {
 }
 table.tabela {
     margin-top: 23px;
+    width: 100%;
 }
 .tabela-precos th,
 .tabela-precos td {
-    padding: 8px;
     text-align: left;
+    padding: 5px;
 }
 
 .tabela-precos th {
@@ -46,26 +47,111 @@ table.tabela {
     font-style: italic;
 }
 
-.produto {
+.produto, tr.volume> th:first-child {
+    width: 50%;
     margin-bottom: 11px;
     border: none !important;
 }
 
 .produto h2 {
     margin: 0;
-    font-size: 19px;
+    font-size: 18px;
     color: white;
 }
 
 .produto p {
     margin: 5px 0;
-    font-size: 12px;
+    font-size: 10px;
 }
 
-.preco {
+.preco, tr.volume > th {
     font-weight: bold;
+    width: 18%;
+    font-size: 14px;
 }
 
 .tamanho {
     margin-bottom: 10px;
 }
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flag-promocional {
+    display: inline-block;
+    background-color: #FF5733;
+    color: yellow;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 18px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 20px;
+}
+.flag-promocional::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #FF5733;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Estilos da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #f39c12;
+}
+
+/* Estilos do menu hamburguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+
