@@ -14,13 +14,15 @@
             <img src="./assets/logo.png" alt="Logo">
         </div>
         <ul class="menu">
-            <li><a href="#">Açais</a></li>
-            <li><a href="#">Açais Puro</a></li>
-            <li><a href="#">Sorvetes</a></li>
-            <li><a href="#">Porções adicionais</a></li>
-            <li><a href="#">Batidas</a></li>
-            <li><a href="#">Bebidas</a></li>
-            <li><a href="#">MilkShakes</a></li>
+            <li><a href="#acais">Açais</a></li>
+            <li><a href="#acais-puro">Açais Puro</a></li>
+            <li><a href="#porcoes-adicionais">Porções adicionais</a></li>
+            <li><a href="#sorvetes">Sorvetes</a></li>
+            <li><a href="#milkshakes">MilkShakes</a></li>
+            <li><a href="#batidas">Batidas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#saladas-frutas">Salada de frutas</a></li>
+
         </ul>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -29,18 +31,14 @@
         </div>
     </nav>
     <div class="cardapio">
-    <div class="topico">
+    <div id="acais" class="topico">
         <h1>Açaí</h1>
     </div>
-
     <div class="tabela-precos">
-
         <table class="tabela">
-
             <thead>
-                                    <span class="flag-promocional">Preço Promocional</span>            
+                <span class="flag-promocional">Preço Promocional</span>            
                 <td class="produto">
-
                     <h2>Tradicional 200ml</h2>
                     <p class="descricao">Açaí, banana em rodelas, granola e leite condensado</p>
                 </td>
@@ -210,14 +208,14 @@
         </table>
     </div>
 
-    <div class="topico">
+    <div id="acais-puro" class="topico">
         <h1>Açai * Cupuaçu</h1>
     </div>
 
     <div class="tabela-precos">
         <table class="tabela">
             <tbody>                        
-                <p class="descricao">sem acompanhamentos</p>
+                <span class="flag">sem acompanhamentos</span>
                 <tr>
                     <td class="produto">
                         <h2>Pote 1000ml</h2>    
@@ -259,14 +257,14 @@
         </table>
     </div>
       
-    <div class="topico">
+    <div id="porcoes-adicionais" class="topico">
         <h1>Porções adicionais</h1>
     </div>
 
     <div class="tabela-precos">
         <table class="tabela">
             <tbody>
-                <p class="descricao">valor por porção</p>
+                <span class="flag">valor por porção</span>
                 <tr>
                     <td class="produto">
                         <p class="descricao">Banana , Granola, Paçoca, Bis, Doce de leite, Leite condensado, Escureto, Biscoito Palito, Mel, Confete, Leite em pó, Flocos de coco, Amendoins, 
@@ -298,17 +296,18 @@
         </table>
     </div>
 
-    <div class="topico">
+    <div id="sorvetes" class="topico">
         <h1>Sorvetes</h1>
     </div>
 
     <div class="tabela-precos">
         <table class="tabela">
             <tbody>
+                <span class="flag">consulte os sabores disponíveis</span>
+                <span class="flag">60g cada bola</span>
                 <tr>
                     <td class="produto">
                         <h2>1 bola</h2>
-                        <p class="descricao">Qualquer sabor (consulte os sabores disponíveis)</p>
                         
                     </td>
                     <td class="preco">R$ 2,50</td>
@@ -316,7 +315,7 @@
                 <tr>
                     <td class="produto">
                         <h2>4 bola</h2>
-                        <p class="descricao">Qualquer sabor  *mesmo recipente (consulte os sabores disponíveis ) </p>
+                        <p class="descricao">*mesmo recipente </p>
                         
                     </td>
                     <td class="preco">R$ 9,00</td>
@@ -325,7 +324,7 @@
         </table>
     </div>
 
-    <div class="topico">
+    <div id="batidas" class="topico">
         <h1>Batida</h1>
     </div>
 
@@ -371,7 +370,7 @@
             </tbody>
         </table>
     </div>
-    <div class="topico">
+    <div id="milkshakes" class="topico">
         <h1>Milkshake</h1>
     </div>
 
@@ -412,17 +411,18 @@
         </table>
     </div>
 
-    <div class="topico">
+    <div id="saladas-frutas" class="topico">
         <h1>Salada de frutas</h1>
     </div>
-
+    
     <div class="tabela-precos">
         <table class="tabela">
             <tbody>
+                <span class="flag">Feita na hora com frutas frescas</span>
                 <tr>
                     <td class="produto">
                         <h2>Salada de frutas</h2>
-                        <p class="descricao">Feita na hora com frutas frescas, acompanha leite em pó</p>
+                        <p class="descricao">com leite em pó</p>
                         
                     </td>
                     <td class="preco">R$ 11,00</td>
@@ -430,7 +430,7 @@
             </tbody>
         </table>
     </div>
-    <div class="topico">
+    <div id="bebidas" class="topico">
         <h1>Bebidas</h1>
     </div>
 

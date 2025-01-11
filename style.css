@@ -81,7 +81,7 @@ tr {
     justify-content: space-between;
 }
 
-.flag-promocional {
+.flag-promocional , .flag {
     display: inline-block;
     background-color: #FF5733;
     color: yellow;
