@@ -5,7 +5,9 @@ body {
     margin: 9px;
     color: white;
 }
-
+.cardapio {
+    margin-top: 70px;
+}
 h1 {
     text-align: center;
     color: #6b03c7;
@@ -107,11 +109,17 @@ tr {
 }
 /* Estilos da Navbar */
 .navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 90%;
+    z-index: 1000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: #333;
+    padding: 15px 22px;
+    background-color: #6b03c7;
+
 }
 
 .navbar .logo a {
@@ -144,7 +152,7 @@ tr {
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    width: 30px;
+    width: 33px;
     height: 25px;
 }
 
@@ -155,3 +163,35 @@ tr {
     background-color: #fff;
 }
 
+.logo img {
+    max-height: 50px; 
+    width: auto; 
+}
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color:#6b03c7;
+        position: absolute;
+        top: 41px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+
+    }
+}
